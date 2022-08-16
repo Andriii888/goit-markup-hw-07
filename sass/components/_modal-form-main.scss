@@ -28,16 +28,16 @@
 .modal-form-field {
     width: 100%;
     margin-top: 10px;
+    &:nth-child(2) {
+            margin-top: 12px;
+    
+        }
+ &:nth-child(5) {
+ margin-bottom: 20px;
+ }
 }
 
-.modal-form-field:nth-child(2) {
-    margin-top: 12px;
 
-}
-
-.modal-form-field:nth-child(5) {
-    margin-bottom: 20px;
-}
 
 .modal-form-input {
     position: relative;
@@ -48,17 +48,13 @@
     padding-left: 42px;
     font-size: 16px;
     transition: border-color var(--transition-dur-func);
+    &:focus {
+            border-color: var(--accent-text-color);
+            outline: none;
+        }
 }
 
-.modal-form-input:focus {
-    border-color: var(--accent-text-color);
-    outline: none;
-}
 
-.modal-form-input:focus+.modal-form-input-icon {
-    color: var(--accent-text-color);
-
-}
 
 .hover-box {
     position: absolute;
@@ -98,6 +94,10 @@
     transform: translateY(-50%);
     fill: currentColor;
     transition: color var(--transition-dur-func);
+    .modal-form-input:focus+&{
+            color: var(--accent-text-color);
+    
+        }
 
 }
 
@@ -111,17 +111,17 @@
     border-radius: 4px;
     transition: border-color var(--transition-dur-func);
     overflow: auto;
+    &::placeholder {
+            text-transform: uppercase;
+        }
+                &:focus,
+                &:hover {
+                    border-color: var(--accent-text-color);
+                    outline: none;
+                }
 }
 
-.modal-form-message::placeholder {
-    text-transform: uppercase;
-}
 
-.modal-form-message:focus,
-.modal-form-message:hover {
-    border-color: var(--accent-text-color);
-    outline: none;
-}
 
 .modal-form-check-desc {
     font-weight: 400;
@@ -129,20 +129,20 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    &::before {
+            content: "";
+            display: inline-flex;
+    
+            width: 16px;
+            height: 15px;
+            border-radius: 2px;
+            border: 1px solid var(--primary-text-colorry);
+            cursor: pointer;
+            margin: 0;
+        }
 
 }
 
-.modal-form-check-desc::before {
-    content: "";
-    display: inline-flex;
-
-    width: 16px;
-    height: 15px;
-    border-radius: 2px;
-    border: 1px solid var(--primary-text-colorry);
-    cursor: pointer;
-    margin: 0;
-}
 
 .modal-form-check:checked+.modal-form-check-desc::before {
     background-image: url(../images/check.svg);

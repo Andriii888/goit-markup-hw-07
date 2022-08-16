@@ -82,14 +82,13 @@
         color: var(--icons-color);
         transition: color var(--transition-dur-func),
             background-color var(--transition-dur-func);
-
+    &:hover,
+        &:focus {
+            color: var(--color-white);
+            background-color: var(--accent-text-color);
+        }
     }
 
-    .social-links-team:hover,
-    .social-links-team:focus {
-        color: var(--color-white);
-        background-color: var(--accent-text-color);
-    }
 
     .social-team-icons {
         fill: currentColor;

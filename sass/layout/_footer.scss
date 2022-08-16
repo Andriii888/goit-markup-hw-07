@@ -8,13 +8,13 @@
     justify-content: center;
     align-items: center;
     transition: background-color var(--transition-dur-func);
-
-}
-
-.social-links-items-footer:hover,
-.social-links-items-footer:focus {
+&:hover,
+&:focus {
     background-color: var(--accent-text-color);
 }
+
+}
+
 
 .footer-list-title {
     font-weight: 700;
@@ -57,6 +57,10 @@ address {
     letter-spacing: 0.03em;
     color: var(--adress-color);
     transition: color var(--transition-dur-func);
+    &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+        }
 }
 
 footer {
@@ -64,10 +68,6 @@ footer {
     padding: 60px 0;
 }
 
-.links-address a:hover,
-.links-address a:focus {
-    color: var(--accent-text-color);
-}
 
 .logo-studio-footer {
     color: var(--color-white);

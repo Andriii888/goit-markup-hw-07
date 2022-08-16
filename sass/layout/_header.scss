@@ -27,14 +27,13 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+&:hover,
+    &:focus {
+        color: var(--accent-text-color);
 
+    }
 }
 
-.navigation-links a:hover,
-.navigation-links a:focus {
-    color: var(--accent-text-color);
-
-}
 
 .header-contacts {
     display: flex;
@@ -53,12 +52,12 @@ header {
 .links-header {
     position: relative;
     transition: color var(--transition-dur-func);
+    &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+        }
 }
 
-.links-header:hover,
-.links-header:focus {
-    color: var(--accent-text-color);
-}
 
 .current::after {
     content: "";

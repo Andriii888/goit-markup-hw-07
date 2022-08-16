@@ -4,10 +4,11 @@ button {
     border: none;
     display: block;
     margin: 0 auto;
-}
-button:hover,
-button:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-text-color);
     color: var(--color-white);
+}
+
 }
 
