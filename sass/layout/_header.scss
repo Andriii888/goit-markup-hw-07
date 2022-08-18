@@ -1,8 +1,8 @@
-header {
+.header {
     border-bottom: 1px solid #ECECEC;
 }
 
-.page-header-container {
+.header-container {
     display: flex;
     align-items: center;
     height: 80px;
@@ -14,15 +14,16 @@ header {
 
 }
 
-.navigation-links {
+.header-navigation__links {
     display: flex;
     margin-left: 93px;
     gap: 50px;
 }
 
-.navigation-links a {
+.header-navigation__links a {
     transition: color var(--transition-dur-func);
     font-style: normal;
+        color: var(--primary-text-colorry);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -35,7 +36,7 @@ header {
 }
 
 
-.header-contacts {
+.header__contacts {
     display: flex;
     margin-left: auto;
     gap: 50px;
@@ -43,19 +44,29 @@ header {
 
 }
 
-.contacts {
+.header__contacts-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.links-header {
+.header-navigation__link {
     position: relative;
     transition: color var(--transition-dur-func);
     &:hover,
         &:focus {
             color: var(--accent-text-color);
         }
+}
+
+.header__contact-link {
+    position: relative;
+    transition: color var(--transition-dur-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
 }
 
 
@@ -80,15 +91,12 @@ header {
     fill: currentColor;
 }
 
-.header-contacts:first-child {
+.header__contacts:first-child {
     margin-right: 50px;
 }
 
-.navigation-links a {
-    color: var(--primary-text-colorry);
-}
 
-.header-contacts a {
+.header__contacts a {
     display: flex;
     align-items: center;
     font-style: normal;
@@ -100,7 +108,7 @@ header {
     color: var(--text-color);
 }
 
-.navigation-links .current {
+.header-navigation__links .current {
     color: var(--accent-text-color);
 }
 

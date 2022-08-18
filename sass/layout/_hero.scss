@@ -5,12 +5,16 @@
     background-size: cover;
     max-width: 1600px;
     height: 600px;
-    margin: 0 auto;
-    padding: 200px 0;
     background-color: #C4C4C4;
 }
 
-.hero-title {
+.hero_position{
+        margin: 0 auto;
+            padding: 200px 0;
+
+}
+
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -29,7 +33,7 @@
 
 }
 
-.button-hero {
+.hero__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;

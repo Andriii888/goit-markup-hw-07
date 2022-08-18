@@ -373,11 +373,11 @@ p.overlay-portfolio-text {
   color: var(--accent-text-color);
 }
 
-header {
+.header {
   border-bottom: 1px solid #ECECEC;
 }
 
-.page-header-container {
+.header-container {
   display: flex;
   align-items: center;
   height: 80px;
@@ -388,42 +388,51 @@ header {
   align-items: center;
 }
 
-.navigation-links {
+.header-navigation__links {
   display: flex;
   margin-left: 93px;
   gap: 50px;
 }
 
-.navigation-links a {
+.header-navigation__links a {
   transition: color var(--transition-dur-func);
   font-style: normal;
+  color: var(--primary-text-colorry);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.navigation-links a:hover, .navigation-links a:focus {
+.header-navigation__links a:hover, .header-navigation__links a:focus {
   color: var(--accent-text-color);
 }
 
-.header-contacts {
+.header__contacts {
   display: flex;
   margin-left: auto;
   gap: 50px;
   align-items: center;
 }
 
-.contacts {
+.header__contacts-box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.links-header {
+.header-navigation__link {
   position: relative;
   transition: color var(--transition-dur-func);
 }
-.links-header:hover, .links-header:focus {
+.header-navigation__link:hover, .header-navigation__link:focus {
+  color: var(--accent-text-color);
+}
+
+.header__contact-link {
+  position: relative;
+  transition: color var(--transition-dur-func);
+}
+.header__contact-link:hover, .header__contact-link:focus {
   color: var(--accent-text-color);
 }
 
@@ -448,15 +457,11 @@ header {
   fill: currentColor;
 }
 
-.header-contacts:first-child {
+.header__contacts:first-child {
   margin-right: 50px;
 }
 
-.navigation-links a {
-  color: var(--primary-text-colorry);
-}
-
-.header-contacts a {
+.header__contacts a {
   display: flex;
   align-items: center;
   font-style: normal;
@@ -467,7 +472,7 @@ header {
   color: var(--text-color);
 }
 
-.navigation-links .current {
+.header-navigation__links .current {
   color: var(--accent-text-color);
 }
 
@@ -493,12 +498,15 @@ header {
   background-size: cover;
   max-width: 1600px;
   height: 600px;
-  margin: 0 auto;
-  padding: 200px 0;
   background-color: #C4C4C4;
 }
 
-.hero-title {
+.hero_position {
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -513,7 +521,7 @@ header {
   width: 696px;
 }
 
-.button-hero {
+.hero__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
