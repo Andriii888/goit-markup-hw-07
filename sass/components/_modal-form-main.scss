@@ -94,7 +94,8 @@
     transform: translateY(-50%);
     fill: currentColor;
     transition: color var(--transition-dur-func);
-    .modal-form-input:focus+&{
+    .modal-form-input:focus+&,
+        .hover-box:hover+& {
             color: var(--accent-text-color);
     
         }

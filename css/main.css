@@ -322,7 +322,7 @@ p.overlay-portfolio-text {
   fill: currentColor;
   transition: color var(--transition-dur-func);
 }
-.modal-form-input:focus + .modal-form-input-icon {
+.modal-form-input:focus + .modal-form-input-icon, .hover-box:hover + .modal-form-input-icon {
   color: var(--accent-text-color);
 }
 
