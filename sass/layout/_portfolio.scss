@@ -79,9 +79,14 @@ background-color: var(--accent-text-color);
     letter-spacing: 0.03em;
     margin-top: 4px;
 
+ 
+}
+.info-portfolio p{
     color: var(--text-color);
 }
-
+.galery-portfolio::not-child  {
+    color: var(--color-white);
+}
 .info-portfolio {
     border: 1px solid #EEEEEE;
     padding: 20px 24px;

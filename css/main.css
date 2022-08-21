@@ -486,7 +486,7 @@ p.overlay-portfolio-text {
   color: var(--accent-text-color);
 }
 
-.logo-studio {
+.logo__studio {
   color: var(--logo-color-header);
 }
 
@@ -903,7 +903,14 @@ footer {
   line-height: 1.875;
   letter-spacing: 0.03em;
   margin-top: 4px;
+}
+
+.info-portfolio p {
   color: var(--text-color);
+}
+
+.galery-portfolio::not-child {
+  color: var(--color-white);
 }
 
 .info-portfolio {
